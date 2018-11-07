@@ -1,2 +1,9 @@
 .idea/
 *.pyc
+.project
+.settings/
+.prefs
+.pydevproject
+.idea
+.DS_Store
+.cache
