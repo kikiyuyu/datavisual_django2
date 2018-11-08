@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from datavisual import views as siteviews
+import xadmin
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    #path('admin/', admin.site.urls),
+    path('', siteviews.index),
+    path(r'xadmin/', xadmin.site.urls),
+
 ]
