@@ -16,11 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from datavisual import views as siteviews
+from contentprovider import views as cp
 import xadmin
 
 urlpatterns = [
     #path('admin/', admin.site.urls),
     path('', siteviews.index),
+    path('login/', cp.login),
+    path('register/', cp.register),
+    path('register/cp/', cp.register_perform),
     path(r'xadmin/', xadmin.site.urls),
 
 ]

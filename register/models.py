@@ -17,7 +17,7 @@ def player_register(datetime, sex):
     '''
     新玩家注册
     :param datetime: 已日期作为key检索数据表
-    :return: boolen
+    :return: boolean
     '''
     if datetime:
         d = Register.objects.get(game_id=datetime)

@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'datavisual.apps.DatavisualConfig',
     'game.apps.GameConfig',
     'register.apps.RegisterConfig',
+    'contentprovider.apps.ContentproviderConfig',
 
 
 ]
@@ -116,7 +117,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
 
-LANGUAGE_CODE = 'ja'
+LANGUAGE_CODE = 'zh-hans'
 
 LANGUAGE = [
     ('en',_('English')),
